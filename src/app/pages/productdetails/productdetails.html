@@ -1,0 +1,164 @@
+<div class="product-page">
+
+    <div class="container">
+
+        <div class="product-wrapper">
+
+
+            <div class="image-section">
+
+                <div class="image-box">
+
+                    <img
+                        [src]="singleProduct.thumbnail"
+                        [alt]="singleProduct.title">
+
+                </div>
+
+            </div>
+
+
+            <div class="details-section">
+
+                <span class="category">
+
+                    {{singleProduct.category}}
+
+                </span>
+
+                <h1>
+
+                    {{singleProduct.title}}
+
+                </h1>
+
+                <div class="rating">
+
+                    <span class="stars">
+
+                        ★★★★★
+
+                    </span>
+
+                    <span>
+
+                        {{singleProduct.rating}}
+
+                    </span>
+
+                </div>
+
+                <h2 class="price">
+
+                    ₹{{singleProduct.price}}
+
+                </h2>
+
+                <p class="description">
+
+                    {{singleProduct.description}}
+
+                </p>
+
+                <div class="stock">
+
+                    <i class="bi bi-check-circle-fill"></i>
+
+                    In Stock
+
+                </div>
+
+                <div class="quantity">
+
+                    <label>
+
+                        Quantity
+
+                    </label>
+
+                    <input
+                        type="number"
+                        min="1"
+                        value="1">
+                </div>
+
+                <div class="buttons">
+
+                    <button class="cart-btn">
+
+                        <i class="bi bi-cart-plus"></i>
+
+                        Add to Cart
+
+                    </button>
+
+                    <button class="buy-btn">
+
+                        Buy Now
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="specifications">
+
+            <h2>
+
+                Product Details
+
+            </h2>
+
+            <table>
+
+                <tr>
+
+                    <td>Brand</td>
+
+                    <td>{{singleProduct.brand}}</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Category</td>
+
+                    <td>{{singleProduct.category}}</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>SKU</td>
+
+                    <td>{{singleProduct.sku}}</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Warranty</td>
+
+                    <td>{{singleProduct.warrantyInformation}}</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Shipping</td>
+
+                    <td>{{singleProduct.shippingInformation}}</td>
+
+                </tr>
+
+            </table>
+
+        </div>
+
+    </div>
+
+</div>

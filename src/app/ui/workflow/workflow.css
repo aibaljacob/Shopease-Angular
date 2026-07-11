@@ -1,0 +1,228 @@
+/* ========================= */
+
+.intro-flow{
+
+    width:90%;
+    max-width:1300px;
+
+    margin:90px auto;
+
+}
+
+/* ========================= */
+
+.section-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.section-header h2{
+
+    font-size:2.5rem;
+
+    color:#1E293B;
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.section-header p{
+
+    color:#64748B;
+
+    font-size:1rem;
+
+    max-width:650px;
+
+    margin:auto;
+
+    line-height:1.8;
+
+}
+
+/* ========================= */
+
+.flow-container{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:18px;
+
+    flex-wrap:wrap;
+
+}
+
+/* ========================= */
+
+.flow-card{
+
+    background:#FFFFFF;
+
+    border:1px solid #E2E8F0;
+
+    border-radius:20px;
+
+    width:260px;
+
+    padding:35px 25px;
+
+    text-align:center;
+
+    position:relative;
+
+    transition:.35s;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.08);
+
+}
+
+.flow-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 16px 35px rgba(37,99,235,.18);
+
+}
+
+/* ========================= */
+
+.step-number{
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:42px;
+
+    height:42px;
+
+    background:#2563EB;
+
+    color:white;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+    font-size:18px;
+
+    border:4px solid white;
+
+}
+
+/* ========================= */
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:20px auto;
+
+    border-radius:50%;
+
+    background:#F8FAFC;
+
+    color:#2563EB;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:30px;
+
+    transition:.3s;
+
+}
+
+.flow-card:hover .icon{
+
+    background:#2563EB;
+
+    color:white;
+
+}
+
+/* ========================= */
+
+.flow-card h3{
+
+    color:#1E293B;
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+.flow-card p{
+
+    color:#64748B;
+
+    line-height:1.7;
+
+    font-size:15px;
+
+}
+
+/* ========================= */
+
+.arrow{
+
+    font-size:34px;
+
+    color:#2563EB;
+
+}
+
+/* ========================= */
+
+@media(max-width:1200px){
+
+    .arrow{
+
+        display:none;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .section-header h2{
+
+        font-size:2rem;
+
+    }
+
+    .flow-card{
+
+        width:100%;
+
+        max-width:340px;
+
+    }
+
+}

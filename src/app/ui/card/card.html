@@ -1,0 +1,47 @@
+<div class="product-card">
+
+    <div class="image-container">
+
+        <img [src]="productData.thumbnail" [alt]="productData.title">
+
+        <span class="category">
+            {{ productData.category }}
+        </span>
+
+    </div>
+
+    <div class="card-content">
+
+        <h3 class="product-title">
+            {{ productData.title }}
+        </h3>
+
+        <div class="rating-price">
+
+            <div class="rating">
+
+                <i class="bi bi-star-fill">★</i>
+
+                {{ productData.rating }}
+                
+                
+
+            </div>
+
+            <div class="price">
+                ₹{{ productData.price }}
+            </div>
+
+        </div>
+
+        <button
+            class="details-btn"
+            [routerLink]="['/productdetails', productData.id]">
+
+            View Details
+
+        </button>
+
+    </div>
+
+</div>
